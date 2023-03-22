@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: antiquewhite;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 100px;
+}
+
+nav a {
+  position: relative;
+  text-decoration: none;
+  margin-right: 50px;
+  font-size: 30px;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  /* right: 0;   to go right to left instead*/
+  background-color: #000;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover::before {
+  visibility: visible;
+  width: 100%;
+}
