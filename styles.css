@@ -30,8 +30,12 @@ nav {
 
 .home-page {
   text-align: center;
-  height: 
+  height: 600px;
   background-color: rgb(181, 90, 90);
+}
+
+.gif {
+  
 }
 
 nav a {
