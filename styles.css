@@ -1,3 +1,9 @@
+@font-face {
+  font-family: Sackers Gothic Light;
+  src: url("font/Sackers\ Gothic\ Light\ AT\ Regular.otf") format("opentype");
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +17,8 @@ body {
 }
 
 nav {
-  background-color: antiquewhite;
+  background-color: #1d1e22;
+  
   height: 100px;
   display: flex;
   justify-content: flex-end;
@@ -24,8 +31,9 @@ nav a {
   display: flex;
   text-decoration: none;
   margin-right: 50px;
-  font-size: 36px;
+  font-size: 30px;
   align-items: center;
+  color: white;
 }
 
 nav a::before {
@@ -36,7 +44,7 @@ nav a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: white;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
