@@ -8,7 +8,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Oxanium, Arial, Helvetica, sans-serif;
-  
 }
 
 html,
@@ -29,12 +28,12 @@ nav {
 }
 
 .home-page {
-  text-align: center;
-  height: 100px
-  
+  display: flex;
+  height: 850px; /* placeholder height */
+  /* background-color: #a0b9e4; */
+  justify-content: center;
+  align-items: center;
 }
-
-
 
 nav a {
   position: relative;
@@ -70,3 +69,33 @@ nav a:hover::before {
   font-size: 60px;
   font-weight: bold;
 }
+
+/*-----ABOUT SECTION------------- */
+
+.about-section {
+  height: 900px; /*placeholder*/
+  background-color: aliceblue;
+  text-align: left;
+  display: flex;
+}
+
+.about-img {
+  flex: 1;
+
+  height: 400px;
+}
+
+.about-content {
+  flex: 2;
+
+  height: 400px;
+  text-align: left;
+  padding-top: 50px;
+  font-size: 1.5rem;
+}
+
+.about-content p {
+  padding: 10px;
+}
+
+/*---------------------MEDIA QUERIES---------------------------*/
