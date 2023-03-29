@@ -15,22 +15,18 @@
 html,
 body {
   height: 100%;
-  background-color: #f4f7f8;
+  background-color: #b4bac4c2;
 }
 
-/* nav {
+nav {
   display: flex;
   justify-content: flex-end;
-} */
+}
 
 .primary-nav {
-  background-color: #b4bac4c2;
-  width: 100%;
-  height: 100px;
+  padding-top: 1.5rem;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  align-content: center;
 }
 
 .primary-nav a {
@@ -44,7 +40,8 @@ body {
 }
 
 .primary-nav a > span {
-  font-weight: bol;
+  font-weight: bold;
+  margin-inline-end: 0.5rem;
 }
 
 .primary-nav a::before {

@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
+    <header class="primary-header">
+      <div class="container"></div>
       <nav>
-        <ul id="primary-nav" class="primary-nav flex">
+        <div class="container">
+          
+        <button class="mobile-nav-toggle" aria-controls="primary-nav">
+          <img class="icon-hamburguer" src="resources/icon-hamburger.svg" alt="" aria-hidden="true">
+          <img class="icon-close" src="resources/icon-close.svg" alt="" aria-hidden="true">
+          
+          <span class="visually-hidden">Menu</span>
+        </button>    
+        <ul aria-label="Primary" role="list" id="primary-nav" class="primary-nav flex">
           <li class="active">
             <a href="#home-page"> <span aria-hidden="true">01.</span> Home </a>
           </li>
@@ -24,10 +33,11 @@
             <a href="#"> <span aria-hidden="true">03.</span> My Projects </a>
           </li>
           <li>
-            <a href="#"> <span aria-hidden="true">04.</span> Contact </a>
+            <a href="#"> <span aria-hidden="true">04.</span> Contacts </a>
           </li>
         </ul>
       </nav>
+    </div>
     </header>
 
     <article>
