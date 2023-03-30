@@ -87,14 +87,6 @@ body {
   display: none;
 }
 
-
-.mobile-nav-toggle {
-  cursor: pointer;
-  background: transparent;
-  border: 0;
-  padding: 2em;
-}
-
 .mobile-nav-toggle .icon-close {
   display: none;
 }
@@ -104,7 +96,7 @@ body {
 .home-page {
   display: flex;
   height: 850px; /* placeholder height */
-  /* background-color: #a0b9e4; */
+
   justify-content: center;
   align-items: center;
   font-size: 60px;
@@ -140,3 +132,23 @@ body {
 }
 
 /*---------------------MEDIA QUERIES---------------------------*/
+
+@media (max-width: 50em) {
+  .primary-nav {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 2em;
+  }
+}
+
+@media (min-width: 20em) {
+  .home-page {
+    min-width: 1em;
+  }
+}
